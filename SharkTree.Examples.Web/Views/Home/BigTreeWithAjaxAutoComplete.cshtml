@@ -1,0 +1,26 @@
+﻿@using SharkDev.MVC
+
+@{
+    ViewBag.Title = "Simple";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<p>
+    This is an example with 10 866 nodes in a tree. Try to type Node6292.
+</p>
+
+@Html.SharkDev().TreeView(settings =>
+{
+    settings.Id = "sharkTwBigTree";
+    settings.Header.Text = "Tree root - Animal";
+    settings.Header.Visible = true;
+    settings.Header.Expanded = true;
+    settings.AutoCompleteHandler = Url.Content("~/Home/GetBySample");
+    settings.ClientHandlers.ContentSelect = "function (e) { $('#treeClickContainer').text(e.id + '-' + e.name + ' -' + e.parentid); }";
+    settings.AutoCompleteHandler = Url.Content("~/Home/GetBySample");
+    settings.Height = 300;
+    settings.Width = 270;
+    settings.DataOnClient = false;
+}).GetContent(ViewBag.SharkTreeData)
+
+<span id="treeClickContainer"></span>

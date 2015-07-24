@@ -1,0 +1,45 @@
+﻿/* Base style - ControlID without any space. */
+#YOUR_ID.sharkTreeView { border: 1px solid #89867D; float:left; font-size: 12px; font-family:Arial,Verdana; color: #474C48; background-color: #efeeef;}
+#YOUR_ID.sharkTreeView input {font-size: 12px; font-family:Arial, Verdana;}
+
+#YOUR_ID.sharkTreeView li {list-style: none; line-height:22px;}
+
+/* Search section ControlID without any space. */
+#YOUR_ID.sharkTreeView .search {border-bottom: 1px solid #89867D; padding: 5px 5px; margin-bottom: 5px;}
+#YOUR_ID.sharkTreeView .search .autoCompleteInput {padding:3px;max-width:inherit; width:80%;border:1px solid #89867d;}
+#YOUR_ID.sharkTreeView .search .progress{margin-top:5px; display:none; font-size:11px; font-style:italic;color:#03277E;}
+
+/* Header ControlID without any space. */
+#YOUR_ID.sharkTreeView .header {margin-left:5px;}
+#YOUR_ID.sharkTreeView .header .expand {background: url(../Content/images/SharkDev.TreeView.png) no-repeat 0px 2px; width:7px; height:8px; display:block; padding:2px; float:left; overflow:hidden; margin-top:5px;box-sizing: content-box;}
+#YOUR_ID.sharkTreeView .header a:hover { cursor:pointer; }
+#YOUR_ID.sharkTreeView .header .collapse {background: url(../Content/images/SharkDev.TreeView.png) no-repeat 0px -7px; width:7px; height:8px; display:block; padding:2px; float:left; overflow:hidden; margin-top:5px;box-sizing: content-box;}
+#YOUR_ID.sharkTreeView .header .headerspan {line-height: 22px;padding-left: 5px;}
+    
+/* Tree ControlID without any space. */
+#YOUR_ID.sharkTreeView .tree { overflow:scroll;}
+#YOUR_ID.sharkTreeView .tree ul {margin-top:2px; padding-left:19px;}
+#YOUR_ID.sharkTreeView .tree ul li a:hover { cursor:pointer; }
+#YOUR_ID.sharkTreeView .tree ul .contentSelected{background-color:#2093E3; color:#EBEBED; border:1px solid #105282;}  
+#YOUR_ID.sharkTreeView .tree .hiddenUl li { display:none; }
+#YOUR_ID.sharkTreeView .tree ul .expand{background: url(../Content/images/SharkDev.TreeView.png) no-repeat -1px 5px; width:7px; height:8px; display:block; padding:2px; float:left; overflow:hidden; margin-top:3px;box-sizing: content-box;}
+#YOUR_ID.sharkTreeView .tree ul .collapse{background: url(../Content/images/SharkDev.TreeView.png) no-repeat 0px -7px; width:7px; height:8px; display:block; padding:2px; float:left; overflow:hidden; margin-top:4px;box-sizing: content-box;}
+#YOUR_ID.sharkTreeView .tree ul .spaninsidediv{padding-left: 15px; display:block;}
+#YOUR_ID.sharkTreeView .tree ul .solo{padding-left:15px;}
+
+/* Autocomplete - Control ID, space, class name*/
+#YOUR_ID .ui-widget {}
+#YOUR_ID .ui-widget .ui-widget {}
+#YOUR_ID .ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button { font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif; font-size: 0.875em;}
+#YOUR_ID .ui-widget-content {border: 1px solid #dddddd;background: #eeeeee 50% top repeat-x;color: #333333;}
+#YOUR_ID .ui-widget-content a {color: #333333;}
+#YOUR_ID .ui-widget-header {border: 1px solid #e78f08;color: #ffffff;font-weight: bold;}
+#YOUR_ID .ui-widget-header a {color: #ffffff;}
+#YOUR_ID .ui-autocomplete {position: absolute;top: 0;left: 0;cursor: default;}
+#YOUR_ID .ui-menu {list-style: none;padding: 0;margin: 0;display: block;outline: none;}
+#YOUR_ID .ui-front {z-index: 100;}
+#YOUR_ID .ui-menu .ui-menu-item {position: relative;margin: 0;padding: 3px 1em 3px .4em;cursor: pointer;min-height: 0; /* support: IE7 *//* support: IE10, see #8844 */}
+#YOUR_ID .ui-state-focus{border: 1px solid #98C3E0;background: #98C3E0 50% 50% repeat-x;font-weight: bold;}
+
+/* Don't change!!! This is default class for the autocomplete plugin. */
+.ui-helper-hidden-accessible {border: 0;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}

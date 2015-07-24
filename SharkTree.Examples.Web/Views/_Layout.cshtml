@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "_Layout";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SharkTree - Examples</title>
+    <script src="https://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script src="~/Scripts/SharkDev.treeView.js"></script>
+
+    <link href="~/Content/SharkDev.TreeView.css" rel="stylesheet" />
+    <link href="~/Content/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="bs-docs-header" id="content" tabindex="-1">
+        <div class="container">
+            <h1>SharkTree examples - <a href="http://sharktree.azurewebsites.net">SharkTree home page</a></h1>
+            
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../Home/Index">Examples home page</a>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>        
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="bs-docs-section">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

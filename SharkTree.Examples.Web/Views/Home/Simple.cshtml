@@ -1,0 +1,21 @@
+﻿@using SharkDev.MVC
+
+@{
+    ViewBag.Title = "Simple";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@Html.SharkDev().TreeView(settings =>
+{
+    settings.Id = "sharkTwAnimal";
+    settings.Header.Text = "Tree root - Animal";
+    settings.Header.Visible = true;
+    settings.Header.Expanded = true;
+    settings.ClientHandlers.ContentSelect = "function (e) { $('#treeClickContainer').text(e.id + '-' + e.name + ' -' + e.parentid); }";
+    settings.AutoCompleteHandler = Url.Content("~/Home/GetBySample");
+    settings.Height = 300;
+    settings.Width = 270;
+    settings.DataOnClient = true;
+}).GetContent(ViewBag.SharkTreeData)
+
+<span id="treeClickContainer"></span>
